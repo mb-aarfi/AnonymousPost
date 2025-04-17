@@ -1,5 +1,5 @@
 import express from 'express';
-import { getAllUsers, getUsersByBatch, getUserById } from './controllers.js';
+import { getAllUsers, getUsersByBatch, getUserById } from '../controllers/batchusercontroller.js';
 
 const router = express.Router();
 

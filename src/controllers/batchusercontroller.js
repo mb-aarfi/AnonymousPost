@@ -1,5 +1,7 @@
+import { PrismaClient } from '@prisma/client';
 
-import prisma from './config.js';
+const prisma = new PrismaClient();
+
 // Get all users
 export const getAllUsers = async (req, res) => {
     try {
