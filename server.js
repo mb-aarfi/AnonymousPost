@@ -2,9 +2,9 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from 'cors';
 import { createServer } from 'http';
-import mainRouter from './routes/mainroute.js';
 import messageRouter from './src/routes/messageRoutes.js';
 import userRouter from './src/routes/userRoutes.js';
+import batchRouter from './src/routes/batchroute.js';
 import { initializeSocket } from './src/sockets/chatSocket.js';
 
 dotenv.config();
@@ -20,9 +20,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/api', mainRouter);
 app.use('/api/messages', messageRouter);
 app.use('/api/users', userRouter);
+app.use('/api/batch', batchRouter);
 
 const port = process.env.PORT || 5000;
 
