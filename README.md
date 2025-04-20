@@ -37,37 +37,6 @@ npm install socket.io-client@4.8.1  # WebSocket client
 npm install tailwindcss@3.4.1       # CSS framework
 ```
 
-## Quick Installation
-
-### Backend (Root Directory)
-```json
-{
-  "dependencies": {
-    "@prisma/client": "^6.6.0",
-    "bcrypt": "^5.1.1",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^4.21.2",
-    "jsonwebtoken": "^9.0.2",
-    "prisma": "^6.5.0",
-    "socket.io": "^4.8.1"
-  }
-}
-```
-
-### Frontend (Client Directory)
-```json
-{
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-router-dom": "^7.5.0",
-    "axios": "^1.8.4",
-    "socket.io-client": "^4.8.1",
-    "tailwindcss": "^3.4.1"
-  }
-}
-```
 
 ## Required Environment Variables
 
